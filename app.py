@@ -8,20 +8,20 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 @st.cache_resource
 def load_my_model():
-    return load_model(r"C:\VS Projects\Food_classifier\mobilenetv2_food.keras", compile=False)
+    return load_model("mobilenetv2_food.keras", compile=False)
 
 @st.cache_resource
 def load_encoders_and_vectors():
     # Load label encoders
-    with open("Food_Classifier/label_encoders.pkl", "rb") as f:
+    with open("label_encoders.pkl", "rb") as f:
         label_encoders = pickle.load(f)
 
     # Load encoded vectors
-    ingredients_encoded = np.load("Food_Classifier/ingredients_encoded.npy")
-    description_encoded = np.load("Food_Classifier/description_encoded.npy")
+    ingredients_encoded = np.load("ingredients_encoded.npy")
+    description_encoded = np.load("description_encoded.npy")
 
     # Load original texts
-    with open("Food_Classifier/text_data.pkl", "rb") as f:
+    with open("text_data.pkl", "rb") as f:
         text_data = pickle.load(f)
 
     return label_encoders, ingredients_encoded, description_encoded, text_data
@@ -68,3 +68,4 @@ if uploaded_file is not None:
     st.write(f"**Health:** {health_class}")
     st.write(f"**Main Ingredients:** {ingredient_text}")
     st.write(f"**Procedure/Description:** {description_text}")
+
