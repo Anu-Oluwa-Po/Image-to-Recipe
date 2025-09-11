@@ -1,6 +1,6 @@
 # Image-to-Recipe
 ## Image-to-Recipe Classifier 🍲📸
-A Flask-based web app that predicts key attributes of Nigerian dishes from images using machine learning. Built with Transfer Learning (MobileNetV2), a multi-output CNN architecture, and NLP techniques, then deployed on Render 🚀.
+A Streamlit-based web app, deployed on render, that predicts key attributes of Nigerian dishes from images using machine learning. Built with Transfer Learning (MobileNetV2), a multi-output CNN architecture, and NLP techniques, then deployed on Render 🚀.
 
 ## 🚀 Features
 ✅ Predicts dish name, regional origin (e.g., North, South, East, West, Central), and health rating (Healthy, Moderately Healthy, Not Healthy) from a single image
@@ -23,6 +23,6 @@ A Flask-based web app that predicts key attributes of Nigerian dishes from image
 ## 📬 Contact & Contributions
 📩 Email: anuoluwapolorimi25@gmail.com 
 
-🌐 Try the Live System
+🌐 Try the Live System here: https://image-to-recipe-1tcl.onrender.com/
 
 🚀 Feel free to contribute! Fork the repo and enhance spam detection capabilities.
