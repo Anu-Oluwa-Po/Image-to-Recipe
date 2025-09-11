@@ -1,8 +1,9 @@
 tensorflow
 scikit-learn==1.5.1
 numpy>=2.0.0,<3.0.0
-spacy==3.7.4
+spacy
 streamlit==1.38.0
 pillow==10.4.0
 h5py==3.11.0
+
 
